@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet Commander 🚛</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: 0 auto; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input { width: 100%; padding: 8px; box-sizing: border-box; }
+        button {
+            background-color: #28a745; color: white; border: none;
+            padding: 10px 20px; cursor: pointer; font-size: 16px;
+        }
+        button:hover { background-color: #218838; }
+        #message { margin-top: 20px; padding: 10px; border-radius: 5px; }
+        .success { background-color: #d4edda; color: #155724; }
+        .error { background-color: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+
+<h1>🚛 Fleet Commander: Hire Driver</h1>
+
+<div class="form-container">
+    <form id="driverForm">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="e.g. John Doe" required>
+        </div>
+
+        <div class="form-group">
+            <label for="licenseNumber">License Number</label>
+            <input type="text" id="licenseNumber" placeholder="e.g. TX-998877" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" id="phoneNumber" placeholder="e.g. 555-0199" required>
+        </div>
+
+        <div class="form-group">
+            <label for="licenseExpiry">License Expiry Date</label>
+            <input type="date" id="licenseExpiry" required>
+        </div>
+
+        <button type="submit">Hire Driver</button>
+    </form>
+</div>
+
+<div id="message"></div>
+
+<script>
+    // We will add the logic here next!
+</script>
+
+</body>
+</html>
